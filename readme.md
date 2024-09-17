@@ -2,8 +2,8 @@
 
 <img src="/assets/captura1.png" width="500">
 
-- Diseño implementado en HTML, CSS, SCSS y Bootstrap.
-- Web responsive.
+- Design implemented with HTML, CSS, SCSS y Bootstrap.
+- Responsive web.
 
 Deployed:
 https://insurezellachallenge.vercel.app/
