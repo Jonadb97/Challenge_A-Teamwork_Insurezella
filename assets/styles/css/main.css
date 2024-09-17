@@ -1,0 +1,1615 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .navegador-phone {
+    display: none !important;
+  }
+  .phone-help-cards {
+    display: none;
+  }
+  .help-phone {
+    display: none;
+  }
+  .mobile-footer {
+    display: none;
+  }
+  body {
+    border-bottom: 64px solid #336bfa;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    background-color: #2e77f9;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+  }
+  .contact .mail-n-number {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact .mail-n-number span {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .contact .mail-n-number span svg {
+    margin: auto;
+  }
+  .navegador-phone {
+    display: none;
+  }
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw 1rem 5vw;
+  }
+  .navegador .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+  }
+  .navegador .navegadorigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: "Kanit", "sans-serif";
+  }
+  .navegador .navegadorigation li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .navegador .navegadorigation li a svg {
+    height: 0.8rem;
+    transform: translateY(2px);
+  }
+  .navegador .navegadorigation li a:hover {
+    color: #00b2ff;
+  }
+  .navegador .call-us {
+    text-decoration: none;
+    background-color: #002cff;
+    color: #ffffff;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+  .navegador .call-us:hover {
+    background-color: #ffffff;
+    border: 1px solid #002cff;
+    color: #002cff;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../hero-bg.jpg");
+    background-position: 120% 20%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding: 5vw 30vw 5vw 10vw;
+    background-color: #d5cfd0;
+  }
+  .main .presentation {
+    width: 40vw;
+    background-color: #d5cfd0;
+  }
+  .main .presentation h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    color: #336bfa;
+    font-weight: 800;
+  }
+  .main .presentation p {
+    font-family: "Kanit", "sans-serif";
+    color: rgba(0, 0, 0, 0.747);
+  }
+  .main .presentation button {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #00b2ff;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .main .presentation button:hover {
+    border: 1px solid #00b2ff;
+    background-color: #ffffff;
+    color: #00b2ff;
+  }
+  .help .my-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 4rem;
+    margin: 5rem 10vw 5rem 10vw;
+  }
+  .help .my-cards .my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 12vw;
+    box-shadow: 0px 10px 20px #336bfa;
+    padding: 5rem 2rem 5rem 2rem;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .help .my-cards .my-card img {
+    width: 96px;
+    margin-bottom: 1rem;
+  }
+  .help .my-cards .my-card:hover {
+    box-shadow: 0px 10px 30px #002cff;
+  }
+  .find-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15vw 0rem 15vw;
+  }
+  .find-plan .text {
+    padding: 5rem 0vw 5rem 4vw;
+    width: 30vw;
+  }
+  .find-plan .text h1 {
+    font-size: 3rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .find-plan .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .find-plan .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .find-plan .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .find-plan .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .find-plan .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .find-plan .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pick-insurance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 5rem 15vw;
+    background-color: #e9f5ff;
+  }
+  .pick-insurance h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+  }
+  .pick-insurance .insurance-my-cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .pick-insurance .insurance-my-cards .my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    max-width: 400px;
+  }
+  .pick-insurance .insurance-my-cards .my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    color: #336bfa;
+    margin-top: 1rem;
+  }
+  .pick-insurance .insurance-my-cards .my-card p {
+    color: rgba(0, 0, 0, 0.493);
+    font-family: "Montserrat", "sans-serif";
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .protecting-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15vw 5rem 15vw;
+  }
+  .protecting-people .text {
+    padding: 5rem 8vw 5rem 8vw;
+  }
+  .protecting-people .text h1 {
+    font-size: 3rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .protecting-people .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .protecting-people .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .protecting-people .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .protecting-people .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .protecting-people .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .protecting-people .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 15vh 15vw;
+  }
+  .help h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+    margin-bottom: 2rem;
+  }
+  .help .help-my-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8rem;
+  }
+  .help .help-my-cards .help-my-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card .content {
+    margin-top: 2rem;
+    padding: 0;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    padding: 0;
+    margin: 0;
+  }
+  .help .help-my-cards .help-my-card p {
+    height: auto;
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.493);
+    padding: auto;
+    margin: auto;
+  }
+  .help .help-my-cards .help-my-card img {
+    object-fit: cover;
+    width: 20vw;
+    height: 10vw;
+  }
+  .help .help-my-cards .help-my-card a {
+    justify-self: end;
+    text-decoration: none;
+    color: #336bfa;
+    font-family: "Kanit", "sans-serif";
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .help .help-my-cards .help-my-card a:hover {
+    font-weight: bold;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 2rem 5rem 2rem 5rem;
+    padding: 2rem;
+    transform: translateY(4rem);
+    background-color: #ffffff;
+    box-shadow: 0px 15px 30px #002cff;
+    z-index: 2;
+    font-family: "Montserrat", "sans-serif";
+  }
+  .footer .footer-my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+  }
+  .footer .footer-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  .footer .footer-my-card .rrss ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 2rem;
+    height: 5vh;
+  }
+  .footer .footer-my-card .rrss ul li > a {
+    color: #336bfa;
+  }
+  .footer .footer-my-card .rrss ul li > a svg {
+    transition: 0.3s ease-in-out;
+    width: 18px;
+    height: 18px;
+  }
+  .footer .footer-my-card .rrss ul li > a:hover svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer .footer-my-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 18vh;
+  }
+  .footer .footer-my-card ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer .footer-my-card ul li > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .footer .footer-my-card ul li > a:hover {
+    color: #002cff;
+  }
+  .footer .footer-my-card .footer-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .mobile-footer {
+    display: block;
+  }
+  .first-footer,
+  .second-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #ffffff;
+    box-shadow: 0px 15px 30px #002cff;
+    z-index: 2;
+    font-family: "Montserrat", "sans-serif";
+  }
+  .first-footer .footer-my-card,
+  .second-footer .footer-my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .first-footer .footer-my-card h2,
+  .second-footer .footer-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .first-footer .footer-my-card p,
+  .second-footer .footer-my-card p {
+    padding: 2rem;
+  }
+  .first-footer .footer-my-card .rrss ul,
+  .second-footer .footer-my-card .rrss ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 2rem;
+    height: 5vh;
+  }
+  .first-footer .footer-my-card .rrss ul li > a,
+  .second-footer .footer-my-card .rrss ul li > a {
+    color: #336bfa;
+  }
+  .first-footer .footer-my-card .rrss ul li > a svg,
+  .second-footer .footer-my-card .rrss ul li > a svg {
+    transition: 0.3s ease-in-out;
+    width: 18px;
+    height: 18px;
+  }
+  .first-footer .footer-my-card .rrss ul li > a:hover svg,
+  .second-footer .footer-my-card .rrss ul li > a:hover svg {
+    width: 24px;
+    height: 24px;
+  }
+  .first-footer .footer-my-card ul,
+  .second-footer .footer-my-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 18vh;
+  }
+  .first-footer .footer-my-card ul li,
+  .second-footer .footer-my-card ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .first-footer .footer-my-card ul li > a,
+  .second-footer .footer-my-card ul li > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .first-footer .footer-my-card ul li > a:hover,
+  .second-footer .footer-my-card ul li > a:hover {
+    color: #002cff;
+  }
+  .first-footer .footer-my-card .footer-logo,
+  .second-footer .footer-my-card .footer-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+  }
+  .first-footer {
+    margin-right: 2rem;
+    transform: translateY(2rem);
+  }
+  .second-footer {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    transform: translateY(-2rem);
+  }
+  .footer-desktop {
+    display: none;
+  }
+  .strip {
+    background-color: #336bfa;
+    height: 64px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    border-top: 64px solid #336bfa;
+    border-bottom: 64px solid #336bfa;
+  }
+  body {
+    border-bottom: 64px solid #ffffff;
+  }
+  .navegador-phone {
+    display: none !important;
+  }
+  .phone-help-cards {
+    display: none;
+  }
+  .help-phone {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    background-color: #2e77f9;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5vw;
+  }
+  .contact .mail-n-number {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact .mail-n-number span {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .contact .mail-n-number span svg {
+    margin: auto;
+  }
+  .navegador-phone {
+    display: none;
+  }
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw 1rem 5vw;
+  }
+  .navegador .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+  }
+  .navegador .navegadorigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: "Kanit", "sans-serif";
+  }
+  .navegador .navegadorigation li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .navegador .navegadorigation li a svg {
+    height: 0.8rem;
+    transform: translateY(2px);
+  }
+  .navegador .navegadorigation li a:hover {
+    color: #00b2ff;
+  }
+  .navegador .call-us {
+    text-decoration: none;
+    background-color: #002cff;
+    color: #ffffff;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+  .navegador .call-us:hover {
+    background-color: #ffffff;
+    border: 1px solid #002cff;
+    color: #002cff;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../hero-bg.jpg");
+    background-position: 340px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    padding: 5vw 30vw 5vw 3vw;
+    background-color: #d5cfd0;
+  }
+  .main .presentation {
+    width: 40vw;
+    background-color: #d5cfd0;
+  }
+  .main .presentation h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    color: #336bfa;
+    font-weight: 800;
+  }
+  .main .presentation p {
+    font-family: "Kanit", "sans-serif";
+    color: rgba(0, 0, 0, 0.747);
+  }
+  .main .presentation button {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #00b2ff;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .main .presentation button:hover {
+    border: 1px solid #00b2ff;
+    background-color: #ffffff;
+    color: #00b2ff;
+  }
+  .help .my-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 5rem 10vw 5rem 10vw;
+  }
+  .help .my-cards .my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 0px 10px 20px #336bfa;
+    padding: 5rem 2rem 5rem 2rem;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .help .my-cards .my-card img {
+    width: 64px;
+    margin-bottom: 1rem;
+  }
+  .help .my-cards .my-card:hover {
+    box-shadow: 0px 10px 30px #002cff;
+  }
+  .find-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15vw 0rem 15vw;
+  }
+  .find-plan .text {
+    padding: 5rem 0vw 5rem 4vw;
+    width: 30vw;
+  }
+  .find-plan .text h1 {
+    font-size: 3rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .find-plan .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .find-plan .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .find-plan .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .find-plan .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .find-plan .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .find-plan .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pick-insurance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 5rem 15vw;
+    background-color: #e9f5ff;
+  }
+  .pick-insurance h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+  }
+  .pick-insurance .insurance-my-cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .pick-insurance .insurance-my-cards .my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+    max-width: 400px;
+  }
+  .pick-insurance .insurance-my-cards .my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    color: #336bfa;
+    text-align: center;
+  }
+  .pick-insurance .insurance-my-cards .my-card p {
+    color: rgba(0, 0, 0, 0.493);
+    font-family: "Montserrat", "sans-serif";
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .protecting-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15vw 5rem 15vw;
+  }
+  .protecting-people .text {
+    padding: 5rem 8vw 5rem 8vw;
+  }
+  .protecting-people .text h1 {
+    font-size: 3rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .protecting-people .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .protecting-people .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .protecting-people .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .protecting-people .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .protecting-people .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .protecting-people .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 15vh 15vw;
+  }
+  .help h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+    margin-bottom: 1rem;
+  }
+  .help .help-my-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8rem;
+  }
+  .help .help-my-cards .help-my-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card .content {
+    margin-top: 2rem;
+    padding: 0;
+    height: 26vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    padding: 0;
+    margin: 0;
+  }
+  .help .help-my-cards .help-my-card p {
+    height: auto;
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.493);
+    padding: auto;
+    margin: auto;
+  }
+  .help .help-my-cards .help-my-card img {
+    object-fit: cover;
+    width: 20vw;
+    height: 10vw;
+  }
+  .help .help-my-cards .help-my-card a {
+    justify-self: end;
+    text-decoration: none;
+    color: #336bfa;
+    font-family: "Kanit", "sans-serif";
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .help .help-my-cards .help-my-card a:hover {
+    font-weight: bold;
+  }
+  .footer-desktop {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 2rem 5rem 2rem 5rem;
+    padding: 2rem;
+    transform: translateY(4rem);
+    background-color: #ffffff;
+    box-shadow: 0px 15px 30px #002cff;
+    z-index: 2;
+    font-family: "Montserrat", "sans-serif";
+  }
+  .footer-desktop .footer-my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .footer-desktop .footer-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  .footer-desktop .footer-my-card .rrss ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 2rem;
+    height: 5vh;
+  }
+  .footer-desktop .footer-my-card .rrss ul li > a {
+    color: #336bfa;
+  }
+  .footer-desktop .footer-my-card .rrss ul li > a svg {
+    transition: 0.3s ease-in-out;
+    width: 18px;
+    height: 18px;
+  }
+  .footer-desktop .footer-my-card .rrss ul li > a:hover svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-desktop .footer-my-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 18vh;
+  }
+  .footer-desktop .footer-my-card ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer-desktop .footer-my-card ul li > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .footer-desktop .footer-my-card ul li > a:hover {
+    color: #002cff;
+  }
+  .footer-desktop .footer-my-card .footer-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .navbar-toggler {
+    filter: invert(100%);
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    background-size: 130% !important;
+  }
+  .navbar > .container-fluid {
+    padding: 0;
+  }
+  .connect {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    width: 68vw;
+    padding: 0 1rem 0 0;
+    margin: 0;
+    text-align: right;
+  }
+  .connect h2 {
+    font-size: 0.8rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .connect .mail-n-number {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+    font-family: "Montserrat", "sans-serif";
+    width: 100%;
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+  .connect .mail-n-number span > svg {
+    width: 8px;
+  }
+  nav {
+    background-color: #336bfa !important;
+  }
+  .navbar-nav > .nav-item > a {
+    color: #ffffff !important;
+  }
+  .contact {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    background-color: #2e77f9;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5vw;
+  }
+  .contact .mail-n-number {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact .mail-n-number span {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .contact .mail-n-number span svg {
+    margin: auto;
+  }
+  .navegador {
+    display: none;
+  }
+  .collapse {
+    transition: 0.2s ease-in-out;
+  }
+  .navbar-nav {
+    margin-top: 2rem;
+  }
+  .navbar-nav li {
+    padding-left: 2rem;
+  }
+  .navegador-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw 1rem 5vw;
+  }
+  .navegador-phone .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    transform: translate(1rem, 2rem);
+  }
+  .navegador-phone .navegadorigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: "Kanit", "sans-serif";
+  }
+  .navegador-phone .navegadorigation li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .navegador-phone .navegadorigation li a svg {
+    height: 0.8rem;
+    transform: translateY(2px);
+  }
+  .navegador-phone .navegadorigation li a:hover {
+    color: #00b2ff;
+  }
+  .navegador-phone .call-us {
+    text-decoration: none;
+    background-color: #002cff;
+    color: #ffffff;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+  .navegador-phone .call-us:hover {
+    background-color: #ffffff;
+    border: 1px solid #002cff;
+    color: #002cff;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../hero-bg.jpg");
+    background-position: 20px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 15vw 30vw 15vw 3vw;
+    background-color: #d5cfd0;
+  }
+  .main .presentation {
+    width: 40vw;
+    background-color: transparent;
+  }
+  .main .presentation h1 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    color: #336bfa;
+    font-weight: 800;
+  }
+  .main .presentation p {
+    font-family: "Kanit", "sans-serif";
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.747);
+  }
+  .main .presentation button {
+    margin-top: 0rem;
+    border: 1px solid transparent;
+    background-color: #00b2ff;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 30px;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .main .presentation button:hover {
+    border: 1px solid #00b2ff;
+    background-color: #ffffff;
+    color: #00b2ff;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    filter: invert(100%);
+  }
+  .help .desktop {
+    display: none;
+  }
+  .phone-help-cards {
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+  }
+  .phone-help-cards .carousel-item {
+    height: 50vh;
+  }
+  .phone-help-cards .carousel > .carousel-inner > .carousel-item .my-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+    box-shadow: 0px 10px 20px #336bfa;
+    margin: auto;
+    height: 50vw;
+  }
+  .find-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .find-plan .plan-image {
+    width: 80vw;
+    transform: translateX(-3rem);
+  }
+  .find-plan .text {
+    transform: translateX(3rem);
+    width: 75vw;
+  }
+  .find-plan .text h1 {
+    font-size: 2rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .find-plan .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .find-plan .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .find-plan .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .find-plan .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .find-plan .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .find-plan .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pick-insurance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 5rem 15vw;
+    background-color: #e9f5ff;
+  }
+  .pick-insurance h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+  }
+  .pick-insurance .insurance-my-cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .pick-insurance .insurance-my-cards .my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    max-width: 250px;
+    height: 35vh;
+  }
+  .pick-insurance .insurance-my-cards .my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 1.2rem;
+    color: #336bfa;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .pick-insurance .insurance-my-cards .my-card p {
+    color: rgba(0, 0, 0, 0.493);
+    font-family: "Montserrat", "sans-serif";
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .protecting-people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .protecting-people .plan-image {
+    width: 80vw;
+    transform: translateX(-3rem);
+  }
+  .protecting-people .text {
+    transform: translateX(2rem);
+    width: 75vw;
+  }
+  .protecting-people .text h1 {
+    font-size: 2rem;
+    font-family: "Kanit", "sans-serif";
+  }
+  .protecting-people .text p {
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .protecting-people .text .about {
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    background-color: #336bfa;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: "Kanit", "sans-serif";
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .protecting-people .text .about:hover {
+    background-color: #ffffff;
+    border: 1px solid #336bfa;
+    color: #336bfa;
+  }
+  .protecting-people .text .tips {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .protecting-people .text .tips .save-money {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .protecting-people .text .tips .licensed-agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .help-phone {
+    display: block;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card {
+    height: 75vh;
+    padding-bottom: 2rem;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    padding: 5rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card p {
+    height: auto;
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.493);
+    padding: 2rem;
+    margin: auto;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card a {
+    justify-self: end;
+    text-decoration: none;
+    color: #336bfa;
+    font-family: "Kanit", "sans-serif";
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  .help-phone .carousel > .carousel-inner > .carousel-item > .help-my-card a:hover {
+    font-weight: bold;
+  }
+  .help {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 15vw 15vh 15vw;
+  }
+  .help h1 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.74);
+  }
+  .help .help-my-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8rem;
+  }
+  .help .help-my-cards .help-my-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card .content {
+    margin-top: 2rem;
+    padding: 0;
+    height: 26vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .help .help-my-cards .help-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    padding: 0;
+    margin: 0;
+  }
+  .help .help-my-cards .help-my-card p {
+    height: auto;
+    font-family: "Montserrat", "sans-serif";
+    color: rgba(0, 0, 0, 0.493);
+    padding: auto;
+    margin: auto;
+  }
+  .help .help-my-cards .help-my-card img {
+    object-fit: cover;
+    width: 20vw;
+    height: 10vw;
+  }
+  .help .help-my-cards .help-my-card a {
+    justify-self: end;
+    text-decoration: none;
+    color: #336bfa;
+    font-family: "Kanit", "sans-serif";
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+  .help .help-my-cards .help-my-card a:hover {
+    font-weight: bold;
+  }
+  .mobile-footer {
+    display: block;
+  }
+  .first-footer,
+  .second-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #ffffff;
+    box-shadow: 0px 15px 30px #002cff;
+    z-index: 2;
+    font-family: "Montserrat", "sans-serif";
+  }
+  .first-footer .footer-my-card,
+  .second-footer .footer-my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .first-footer .footer-my-card h2,
+  .second-footer .footer-my-card h2 {
+    font-family: "Kanit", "sans-serif";
+    font-size: 2rem;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  .first-footer .footer-my-card .rrss ul,
+  .second-footer .footer-my-card .rrss ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 2rem;
+    height: 5vh;
+  }
+  .first-footer .footer-my-card .rrss ul li > a,
+  .second-footer .footer-my-card .rrss ul li > a {
+    color: #336bfa;
+  }
+  .first-footer .footer-my-card .rrss ul li > a svg,
+  .second-footer .footer-my-card .rrss ul li > a svg {
+    transition: 0.3s ease-in-out;
+    width: 18px;
+    height: 18px;
+  }
+  .first-footer .footer-my-card .rrss ul li > a:hover svg,
+  .second-footer .footer-my-card .rrss ul li > a:hover svg {
+    width: 24px;
+    height: 24px;
+  }
+  .first-footer .footer-my-card ul,
+  .second-footer .footer-my-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 18vh;
+  }
+  .first-footer .footer-my-card ul li,
+  .second-footer .footer-my-card ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .first-footer .footer-my-card ul li > a,
+  .second-footer .footer-my-card ul li > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .first-footer .footer-my-card ul li > a:hover,
+  .second-footer .footer-my-card ul li > a:hover {
+    color: #002cff;
+  }
+  .first-footer .footer-my-card .footer-logo,
+  .second-footer .footer-my-card .footer-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+  }
+  .first-footer {
+    margin-right: 2rem;
+    transform: translateY(2rem);
+  }
+  .second-footer {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    transform: translateY(-2rem);
+  }
+  .footer-desktop {
+    display: none;
+  }
+  .strip {
+    background-color: #336bfa;
+    height: 64px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    border-top: 64px solid #336bfa;
+    border-bottom: 64px solid #336bfa;
+  }
+  body {
+    border-bottom: 64px solid #ffffff;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
