@@ -463,6 +463,9 @@ body {
   }
 }
 @media screen and (max-width: 1280px) {
+  .navegador-phone {
+    display: none !important;
+  }
   .mobile-footer {
     display: block;
   }
@@ -579,9 +582,6 @@ body {
   }
   body {
     border-bottom: 64px solid #ffffff;
-  }
-  .navegador-phone {
-    display: none !important;
   }
   .phone-help-cards {
     display: none;
@@ -1055,13 +1055,13 @@ body {
     text-align: right;
   }
   .connect h2 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-family: "Kanit", "sans-serif";
   }
   .connect .mail-n-number {
     display: flex;
     flex-direction: row;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-family: "Montserrat", "sans-serif";
     width: 100%;
     gap: 1rem;
@@ -1113,7 +1113,7 @@ body {
     padding-left: 2rem;
   }
   .navegador-phone {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -1196,7 +1196,7 @@ body {
     border-radius: 30px;
     font-family: "Kanit", "sans-serif";
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 0.3s ease-in-out;
     text-transform: uppercase;
     color: #ffffff;
@@ -1322,7 +1322,7 @@ body {
     justify-content: space-between;
     min-width: 200px;
     max-width: 250px;
-    height: 35vh;
+    height: auto;
   }
   .pick-insurance .insurance-my-cards .my-card h2 {
     font-family: "Kanit", "sans-serif";
@@ -1518,13 +1518,14 @@ body {
     justify-content: space-between;
     text-align: center;
     padding: 1rem 1rem 5rem 1rem;
+    font-size: 0.8rem;
   }
   .first-footer .footer-my-card h2,
   .second-footer .footer-my-card h2 {
     font-family: "Kanit", "sans-serif";
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
   .first-footer .footer-my-card .rrss ul,
   .second-footer .footer-my-card .rrss ul {
@@ -1559,7 +1560,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 18vh;
+    height: auto;
   }
   .first-footer .footer-my-card ul li,
   .second-footer .footer-my-card ul li {
@@ -1591,6 +1592,7 @@ body {
   }
   .second-footer {
     margin-left: 2rem;
+    padding-right: 1rem;
     margin-bottom: 4rem;
     transform: translateY(-2rem);
   }
