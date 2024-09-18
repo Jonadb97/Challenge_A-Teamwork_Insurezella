@@ -1641,6 +1641,10 @@ h2 {
     transform: translateX(-2.5rem);
     margin-right: auto;
   }
+  .first-footer .footer-my-card ul li {
+    display: flex;
+    flex-direction: row;
+  }
   .second-footer {
     margin-left: 2rem;
     padding-right: 1rem;
