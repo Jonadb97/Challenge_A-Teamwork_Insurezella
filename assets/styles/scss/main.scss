@@ -1380,7 +1380,7 @@ h2 {
         display: flex;
         flex-direction: row;
         color: $white;
-        width: 68vw;
+        width: 65vw;
         padding: 0 1rem 0 0;
         margin: 0;
         text-align: left;
@@ -1537,6 +1537,7 @@ h2 {
         .presentation {
             width: 40vw;
             background-color: transparent;
+            padding-left: 1rem;
 
             h1 {
                 font-size: 1.5rem;
@@ -1555,6 +1556,7 @@ h2 {
             button {
                 margin-top: 2rem;
                 margin-bottom: 2rem;
+                width: 140px;
                 border: 1px solid transparent;
                 background-color: $turqoise;
                 padding: 0.5rem 2rem 0.5rem 2rem;
@@ -1630,18 +1632,20 @@ h2 {
         }
 
         .text {
-            transform: translateX(3rem);
             width: 75vw;
+
 
             h2 {
                 font-size: 2rem;
                 margin: 2rem auto 2rem auto;
                 font-family: 'Kanit', 'sans-serif';
+                padding-left: 5rem;
             }
 
             p {
                 font-family: 'Montserrat', 'sans-serif';
                 color: rgba(0, 0, 0, 0.733);
+                padding-left: 5rem;
             }
 
             .about {
@@ -1671,6 +1675,7 @@ h2 {
                 flex-direction: row;
                 font-family: 'Montserrat', 'sans-serif';
                 font-weight: bold;
+                font-size: 0.8rem;
                 margin-top: 2rem;
 
                 .save-money {
@@ -1718,8 +1723,8 @@ h2 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
-                min-width: 200px;
+                justify-content: space-evenly;
+                min-width: 40vw;
                 max-width: 250px;
                 height: auto;
 
@@ -1736,7 +1741,7 @@ h2 {
                     color: rgba(0, 0, 0, 0.493);
                     font-family: 'Montserrat', 'sans-serif';
                     text-align: center;
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     padding: 0 2rem 0 2rem;
                     margin-bottom: 2rem;
                 }
@@ -1999,7 +2004,7 @@ h2 {
     .second-footer {
         margin-left: 2rem;
         padding-right: 1rem;
-        padding-left: 4rem;
+        padding-left: 4vw;
         margin-bottom: 4rem;
         transform: translateY(-2rem);
 
