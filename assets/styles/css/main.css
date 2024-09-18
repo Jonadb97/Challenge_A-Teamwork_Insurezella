@@ -1642,6 +1642,7 @@ h2 {
   }
   .second-footer h2 {
     margin-right: auto;
+    margin-left: -1rem;
     font-size: 1.5rem;
   }
   .second-footer ul {
