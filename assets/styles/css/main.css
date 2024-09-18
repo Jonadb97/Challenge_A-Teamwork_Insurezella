@@ -1401,10 +1401,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     min-width: 40vw;
     max-width: 250px;
     height: auto;
+  }
+  .pick-insurance .insurance-my-cards .my-card img {
+    margin-bottom: auto;
   }
   .pick-insurance .insurance-my-cards .my-card h3 {
     font-family: "Kanit", "sans-serif";
@@ -1413,6 +1416,7 @@ h2 {
     text-align: center;
     font-weight: 600;
     margin-top: 2rem;
+    margin-bottom: auto;
   }
   .pick-insurance .insurance-my-cards .my-card p {
     color: rgba(0, 0, 0, 0.493);
